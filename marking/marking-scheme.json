@@ -69,7 +69,29 @@
           "wsosSection": 4,
           "extraDescription": "Test: Navigate to login page, verify email input, password input, login button, registration link, and explanatory text are present. Check form validation for empty/invalid inputs.",
           "calculation": {
-            "type": "pass-or-fail"
+            "type": "options",
+            "options": [
+              {
+                "description": "All elements present and validated",
+                "value": 0.5
+              },
+              {
+                "description": "One element missing or not validated",
+                "value": 0.35
+              },
+              {
+                "description": "Two elements missing or not validated",
+                "value": 0.2
+              },
+              {
+                "description": "Three elements missing or not validated",
+                "value": 0.05
+              },
+              {
+                "description": "More than three elements missing  or not validated",
+                "value": 0
+              }
+            ]
           }
         },
         {
